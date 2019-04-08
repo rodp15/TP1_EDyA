@@ -9,7 +9,7 @@ void* aumentar_anio(void* dato){
 //Dada una Persona, retorna otra Persona identica pero con todo el nombre en minuscula
 void* nombre_minusculas (void* dato) {
 	char* nombre = ((Persona)dato)->Nombre;
-	for (; *nombre; *nombre=tolower(*nombre), nombre++);
+	for (; *nombre; *nombre = tolower(*nombre), nombre++);
 	return dato;
 }
 
