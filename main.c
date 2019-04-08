@@ -9,7 +9,8 @@ int main(){
 		printf("Error al leer el archivo. El mismo no existe o esta vacio\n");
 		return 0;
 	}
-	generacion_archivo("salida.txt", Paises, Nombres, cant_nombres, cant_paises, 2801);
+	
+	for(int i = 0; i < 10000 ; i++, generacion_archivo("salida.txt", Paises, Nombres, cant_nombres, cant_paises, 2801));
 		
 	GList lista_personas = crear_lista();
 	lista_personas = generar_lista_archivo("salida.txt", lista_personas);

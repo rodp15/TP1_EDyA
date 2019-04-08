@@ -99,7 +99,7 @@ void parser(char* linea_original, char* nombre, int* edad, char* pais){
 //las lineas del archivo como datos de nodos
 GList generar_lista_archivo(char* nombre_archivo, GList lista){
 	//VALIDACIONES SOBRE ARCHIVO
-	FILE* archivo = fopen(nombre_archivo,"r");
+	FILE *archivo = fopen(nombre_archivo,"r");
 	char buff_nom[100], buff_pais[100], buff_lineas[200];
 	int buff_edad;
 	for(;!feof(archivo);){
