@@ -10,14 +10,14 @@ int main(){
 		return 0;
 	}
 	
-	for(int i = 0; i < 10000 ; i++, generacion_archivo("salida.txt", Paises, Nombres, cant_nombres, cant_paises, 2801));
+	generacion_archivo("salida.txt", Paises, Nombres, cant_nombres, cant_paises, 2000);
 		
 	GList lista_personas = crear_lista();
 	lista_personas = generar_lista_archivo("salida.txt", lista_personas);
 
 	//imprimir_lista(lista_personas);
 
-	lista_personas = filter(lista_personas, &mayores50, &copiar_persona);
+	//lista_personas = filter(lista_personas, &mayores50, &copiar_persona);
 	//imprimir_lista(lista_filter);
 
 	lista_personas = map(lista_personas, &nombre_minusculas, &copiar_persona);

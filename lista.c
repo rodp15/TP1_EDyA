@@ -75,39 +75,18 @@ GList agregar_nodo(GList lista, void* dato){
 	return lista;
 }
 
-void parser(char* linea_original, char* nombre, int* edad, char* pais){
-	int i=0;
-	char *aux = linea_original, *aux2=malloc(sizeof(char)*3);
-	for(; aux[i] != ','; i++);
-	memcpy(nombre, linea_original, (sizeof(char)*i) );
-	nombre[i] = '\0';
-	aux += (i+2);
-	linea_original = aux;
-	for(i = 0; aux[i] != ','; i++);
-	memcpy(aux2, linea_original, (sizeof(char)*i) );
-	aux2[i] = '\0';
-	*edad = atoi(aux2);
-	free(aux2);
-	aux += (i+2);
-	linea_original = aux;
-	for(i = 0; aux[i] != '\r' && aux[i] != '\n'; i++);
-	memcpy(pais, linea_original, (sizeof(char)*i) );
-	pais[i]= '\0';
-}
-
 //Dados un nombre_archivo y una lista, le agrega a la lista
 //las lineas del archivo como datos de nodos
 GList generar_lista_archivo(char* nombre_archivo, GList lista){
 	//VALIDACIONES SOBRE ARCHIVO
 	FILE *archivo = fopen(nombre_archivo,"r");
-	char buff_nom[100], buff_pais[100], buff_lineas[200];
+	char buff_nom[100], buff_pais[100];
 	int buff_edad;
 	for(;!feof(archivo);){
-		fgets(buff_lineas, 200, archivo);
-		parser(buff_lineas, buff_nom, &buff_edad, buff_pais);
-		//fscanf(archivo, " %[^,], %d, %[^\n]\n", buff_nom, &buff_edad, buff_pais);
+		fscanf(archivo, " %[^,], %d, %[^\n]", buff_nom, &buff_edad, buff_pais);
 		lista = agregar_nodo(lista, crear_persona(buff_nom, buff_edad, buff_pais));
 	}
+	fclose(archivo);
 	return lista;
 }
 
@@ -140,4 +119,5 @@ void GList_a_archivo(GList lista, char* nombre_archivo) {
 		fprintf(archivo, "%d, ", ((Persona)lista->dato)->Edad);
 		fprintf(archivo, "%s\n", ((Persona)lista->dato)->Pais);
 	}
+	fclose(archivo);
 }

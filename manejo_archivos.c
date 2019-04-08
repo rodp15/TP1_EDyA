@@ -45,7 +45,9 @@ void generacion_archivo(char* nombre_salida, char paises[][100], char nombres[][
 		r = (rand() % cant_paises);
 		strcpy(buff_pais, paises[r]);
 		r = (rand() % 100) + 1;
-		fprintf(archivo, "%s, %d, %s\n", buff_nombre, r, buff_pais);
+		fprintf(archivo, "%s, %d, %s", buff_nombre, r, buff_pais);
+		if(i != (cantidad_lineas-1)) fprintf(archivo, "\n");
 	}
+	fclose(archivo);
 }
 
