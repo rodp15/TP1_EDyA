@@ -3,6 +3,7 @@
 #include <string.h>
 #include <assert.h>
 #include <ctype.h>
+//#include <wchar.h>
 #include <time.h>
 
 typedef struct _GNodo {
@@ -68,6 +69,8 @@ GList agregar_nodo(GList lista, void* dato);
 //las lineas del archivo como datos de nodos
 GList generar_lista_archivo(char* nombre_archivo, GList lista);
 
+void parser(char* linea_original, char* nombre, int* edad, char* pais);
+
 //Dada una Persona, libera la memoria que ocupaba
 void destriur_persona(void* dato);
 
@@ -98,4 +101,6 @@ carga_archivos guarda los datos en forma de string de las lineas del archivo
 int carga_archivos(char* nombre_archivo, char Lineas[][100]);
 
 void generacion_archivo(char* nombre_salida, char paises[][100], char nombres[][100], int cant_nombres, int cant_paises, int cantidad_lineas);
+
+int string_length(char* texto);
 

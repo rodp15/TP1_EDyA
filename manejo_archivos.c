@@ -1,6 +1,12 @@
 #include "main.h"
 
 
+int string_length(char* texto){
+    int i;
+    for (i = 0; texto[i] != '\n' && texto[i] != '\r'; i++);
+    return i;
+}
+
 /*
 carga_archivos guarda los datos en forma de string de las lineas del archivo
 "nombre_archivo" en la lista "Lineas"
@@ -20,8 +26,8 @@ int carga_archivos(char* nombre_archivo, char Lineas[][100]){
 
 	while(!feof(archivo)){
 		fgets(Lineas[cant_lineas], 100, archivo);
-		largo = strlen(Lineas[cant_lineas]);
-		Lineas[cant_lineas][largo-1]='\0';
+		largo = string_length(Lineas[cant_lineas]);
+		Lineas[cant_lineas][largo]='\0';
 		cant_lineas++;
 	}
 
