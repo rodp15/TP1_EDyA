@@ -77,9 +77,11 @@ GList agregar_nodo(GList lista, void* dato){
 
 //Dados un nombre_archivo y una lista, le agrega a la lista
 //las lineas del archivo como datos de nodos
-GList generar_lista_archivo(char* nombre_archivo, GList lista){
-	//VALIDACIONES SOBRE ARCHIVO
+GList generar_Glista_desde_archivo(char* nombre_archivo, GList lista){
 	FILE *archivo = fopen(nombre_archivo,"r");
+
+	if(archivo == NULL) return lista;
+
 	char buff_nom[100], buff_pais[100];
 	int buff_edad;
 	for(;!feof(archivo);){
@@ -95,7 +97,7 @@ void destriur_persona(void* dato){
 	Persona persona = (Persona)dato;
 	free(persona->Nombre);
 	free(persona->Pais);
-	//free(persona);
+	free(persona);
 }
 
 //Dada una lista y una funcion destruir, libera la memoria de la lista
@@ -117,7 +119,22 @@ void GList_a_archivo(GList lista, char* nombre_archivo) {
 	for (; !es_vacia(lista); lista = lista->sig){
 		fprintf(archivo, "%s, ", ((Persona)lista->dato)->Nombre);
 		fprintf(archivo, "%d, ", ((Persona)lista->dato)->Edad);
-		fprintf(archivo, "%s\n", ((Persona)lista->dato)->Pais);
+		fprintf(archivo, "%s", ((Persona)lista->dato)->Pais);
+		if( !es_vacia(lista->sig) ) fprintf(archivo, "\n"); 
 	}
 	fclose(archivo);
+}
+
+void aplica_map(GList lista, char* salida, Funcion f, Copia c, Destruir d){
+	GList lista_mapeada = crear_lista();
+	lista_mapeada = map(lista, f, c);
+	GList_a_archivo(lista_mapeada, salida);
+	gList_destruir(lista_mapeada, d);
+}
+
+void aplica_filter(GList lista, char* salida, Predicado p, Copia c, Destruir d){
+	GList lista_filtrada = crear_lista();
+	lista_filtrada = filter(lista, p, c);
+	GList_a_archivo(lista_filtrada, salida);
+	gList_destruir(lista_filtrada, d);
 }

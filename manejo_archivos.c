@@ -1,15 +1,17 @@
 #include "main.h"
 
-
+// COMENTAR
 int string_length(char* texto){
     int i;
-    for (i = 0; texto[i] != '\n' && texto[i] != '\r'; i++);
+    for (i = 0; texto[i] != '\n' && texto[i] != '\r' && texto[i] != '\0'; i++);
     return i;
 }
 
 /*
 carga_archivos guarda los datos en forma de string de las lineas del archivo
 "nombre_archivo" en la lista "Lineas"
+El archivo de ingreso debe contener una linea vacia al final del archivo, luego de las que contienen informacion. 
+Esto se debe a que asi fueron presentados los archivos en el enunciado
 */
 int carga_archivos(char* nombre_archivo, char Lineas[][100]){
 	FILE* archivo = fopen(nombre_archivo,"r");
@@ -35,7 +37,8 @@ int carga_archivos(char* nombre_archivo, char Lineas[][100]){
 	return --cant_lineas;
 }
 
-void generacion_archivo(char* nombre_salida, char paises[][100], char nombres[][100], int cant_nombres, int cant_paises, int cantidad_lineas){
+// NO tiene una linea en blanco al final del archivo, pq no nos pinto
+void generacion_archivo_personas(char* nombre_salida, char paises[][100], char nombres[][100], int cant_nombres, int cant_paises, int cantidad_lineas){
 	FILE* archivo=fopen(nombre_salida, "w");
 	char buff_nombre[100], buff_pais[100];
 	int i, r;

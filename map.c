@@ -13,6 +13,21 @@ void* nombre_minusculas (void* dato) {
 	return dato;
 }
 
+void* reverse (void* dato){
+	char *nombre = ((Persona)dato)->Nombre, *reverso = (nombre + strlen(nombre) - 1), aux;
+	for (int i = 0; i < ((strlen(nombre)-1)/2) ; i++){
+		aux = *(nombre+i);
+		*(nombre+i) = *(reverso-i);
+		*(reverso-i) = aux;
+	}
+	return dato;
+}
+
+void* messi (void* dato){
+	strcpy(((Persona)dato)->Nombre, "Messi");
+	return dato;
+}
+
 //Retorna una lista mapeada por la funcion f de la lista_original,
 //copiandola con la funcion c
 GList map(GList lista_original, Funcion f, Copia c){

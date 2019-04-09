@@ -3,7 +3,6 @@
 #include <string.h>
 #include <assert.h>
 #include <ctype.h>
-//#include <wchar.h>
 #include <time.h>
 
 typedef struct _GNodo {
@@ -43,6 +42,12 @@ void* aumentar_anio(void* dato);
 //Dada una Persona, retorna otra Persona identica pero con todo el nombre en minuscula
 void* nombre_minusculas (void* dato);
 
+//Dada una Persona, retorna otra Persona identica pero con todo el nombre invertido
+void* reverse (void* dato);
+
+void* messi (void* dato);
+
+
 //Retorna una copia de la Persona(dato) en otro lugar de la memoria
 //con el mismo dato que la original
 void* copiar_persona(void* dato);
@@ -67,7 +72,7 @@ GList agregar_nodo(GList lista, void* dato);
 
 //Dados un nombre_archivo y una lista, le agrega a la lista
 //las lineas del archivo como datos de nodos
-GList generar_lista_archivo(char* nombre_archivo, GList lista);
+GList generar_Glista_desde_archivo(char* nombre_archivo, GList lista);
 
 void parser(char* linea_original, char* nombre, int* edad, char* pais);
 
@@ -91,6 +96,11 @@ GList filter(GList lista_original, Predicado p, Copia c);
 //Genera un archivo de nombre "nombre_archivo" a partir de la lista
 void GList_a_archivo(GList lista, char* nombre_archivo);
 
+// Encapsula el comportamiento de map
+void aplica_map(GList lista, char* salida, Funcion f, Copia c, Destruir d);
+
+// Encapsula el comportamiento de filter
+void aplica_filter(GList lista, char* salida, Predicado p, Copia c, Destruir d);
 
 //MANEJO DE ARCHIVOS
 
@@ -100,7 +110,7 @@ carga_archivos guarda los datos en forma de string de las lineas del archivo
 */
 int carga_archivos(char* nombre_archivo, char Lineas[][100]);
 
-void generacion_archivo(char* nombre_salida, char paises[][100], char nombres[][100], int cant_nombres, int cant_paises, int cantidad_lineas);
+void generacion_archivo_personas(char* nombre_salida, char paises[][100], char nombres[][100], int cant_nombres, int cant_paises, int cantidad_lineas);
 
 int string_length(char* texto);
 
