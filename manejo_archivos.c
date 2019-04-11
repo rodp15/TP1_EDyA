@@ -77,3 +77,8 @@ void generacion_archivo_personas(char* nombre_salida, char** paises, char** nomb
 
 	fclose(archivo);
 }
+
+void liberar_lista(char** lista, int cantidad_lineas){
+  for(int i = 0; i < cant_lineas, i++)  free(lista[i]);
+  free lista;
+}
