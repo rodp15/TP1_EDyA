@@ -1,25 +1,9 @@
 #include "main.h"
 
-//string_length mide la longitud del texto hasta que encuentre un \r, \n o \0
-int string_length(char* texto){
-    int i;
-    for (i = 0; texto[i] != '\n' && texto[i] != '\r' && texto[i] != '\0'; i++);
-    return i;
-}
-
-//Aloja en memoria el contenido de lista para punteros con el tamaño size
 void alojar_lista(char*** lista, int size){
   (*lista) = malloc(sizeof(char*) * size);
 }
 
-/*
-Carga_archivos guarda los datos en forma de string de las lineas del archivo
-"nombre_archivo" en la lista "Lineas".
-Ademas realoca la lista de no ser posible seguir agregando elementos.
-Retorna la cantidad de lineas del archivo.
-El archivo de ingreso debe contener una linea vacia al final del archivo, luego de las que contienen informacion.
-Esto se debe a que asi fueron presentados los archivos en el enunciado.
-*/
 int carga_archivos(char* nombre_archivo, char*** Lineas, int size){
 	FILE* archivo = fopen(nombre_archivo, "r");
 	int cant_lineas = 0, largo;
@@ -35,24 +19,19 @@ int carga_archivos(char* nombre_archivo, char*** Lineas, int size){
 
 	while(EOF != fscanf(archivo, "%[^\r\n]\r\n", aux)){
 
-    largo = string_length(aux);
+    largo = strlen(aux);
     (*Lineas)[cant_lineas] = malloc(sizeof(char) * (largo + 1));
     aux[largo] = '\0';
 
     strcpy((*Lineas)[cant_lineas], aux);
-
-    printf("%d %s\n", cant_lineas, (*Lineas)[cant_lineas]);
-
 		cant_lineas++;
 
     //Si la cantidad de lineas coincide con el tamaño de la lista,
     //realocamos la lista con el doble de espacio
     if (cant_lineas == size){
-      printf("%d\n", cant_lineas);
       size *= 2;
       (*Lineas) = realloc((*Lineas), sizeof(char*) * size);
       assert(*Lineas);
-      //printf("realloc\n");
     }
 	}
 
@@ -60,7 +39,6 @@ int carga_archivos(char* nombre_archivo, char*** Lineas, int size){
 	return --cant_lineas;
 }
 
-// NO tiene una linea en blanco al final del archivo
 void generacion_archivo_personas(char* nombre_salida, char** paises, char** nombres, int cant_nombres, int cant_paises, int cantidad_lineas){
 	FILE* archivo = fopen(nombre_salida, "w");
 	char buff_nombre[100], buff_pais[100];

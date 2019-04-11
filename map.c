@@ -1,6 +1,5 @@
 #include "main.h"
 
-//Dada una Persona, retorna otra Persona identica pero con un año mas
 void* aumentar_anio(void* dato){
 	((Persona)dato)->Edad++;
 	return dato;
@@ -11,8 +10,6 @@ void* messi (void* dato){
 	return dato;
 }
 
-//Retorna una lista mapeada por la funcion f de la lista_original,
-//copiandola con la funcion c
 GList map(GList lista_original, Funcion f, Copia c){
 	if(es_vacia(lista_original)) return lista_original;
 

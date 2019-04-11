@@ -27,6 +27,7 @@ int main(){
 	aplica_map(lista_personas, "segundo_map.txt", &messi, &copiar_persona, &destriur_persona);
 	aplica_filter(lista_personas, "primer_filter.txt", &peruanos, &copiar_persona, &destriur_persona);
 	aplica_filter(lista_personas, "segundo_filter.txt", &mayores50, &copiar_persona, &destriur_persona);
+	aplica_filter(lista_personas, "tercer_filter.txt", &menores50, &copiar_persona, &destriur_persona);
 	gList_destruir(lista_personas, &destriur_persona);
 
 	return 0;

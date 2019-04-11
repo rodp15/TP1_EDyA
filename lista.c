@@ -1,10 +1,5 @@
 #include "main.h"
 
-// FUNCIONES PARA CREACION DE LISTA
-
-
-//Retorna una copia de la Persona(dato) en otro lugar de la memoria
-//con el mismo dato que la original
 void* copiar_persona(void* dato){
 	Persona persona = (Persona)dato;
 
@@ -23,17 +18,15 @@ void* copiar_persona(void* dato){
 	return persona_copiada;
 }
 
-//Crea la lista vacia
 GList crear_lista(){
 	return NULL;
 }
 
-//Retorna un int determinando si la lista es vacia o no
+
 int es_vacia(GList lista){
 	return lista == NULL;
 }
 
-//Imprime en pantalla dato a dato la lista
 void imprimir_lista(GList lista){
 	if (es_vacia(lista)) printf("Lista vacia\n");
 	else{
@@ -45,7 +38,6 @@ void imprimir_lista(GList lista){
 	}
 }
 
-//Dados un Nombre, Edad y Pais, retorna una persona con esos datos
 Persona crear_persona(char* Nombre, int Edad, char* Pais){
 	Persona nueva_persona = malloc(sizeof(_Persona));
 	nueva_persona->Nombre = malloc(sizeof(char) * (strlen(Nombre) + 1));
@@ -57,7 +49,6 @@ Persona crear_persona(char* Nombre, int Edad, char* Pais){
 	return nueva_persona;
 }
 
-//Dado un dato, retorna un nodo nuevo con ese dato
 GList crear_nodo(void* dato){
 	GList nuevo_nodo = malloc(sizeof(GNodo));
 	nuevo_nodo->dato = dato;
@@ -66,7 +57,6 @@ GList crear_nodo(void* dato){
 	return nuevo_nodo;
 }
 
-//Dados una lista y un dato, agrega un nodo a la lista con la informacion del dato
 GList agregar_nodo(GList lista, void* dato){
 	GList nuevo_nodo = crear_nodo(dato);
 
@@ -80,8 +70,7 @@ GList agregar_nodo(GList lista, void* dato){
 	return lista;
 }
 
-//Dados un nombre_archagregar_nodoivo y una lista, le agrega a la lista
-//las lineas del archivo como datos de nodos
+
 GList generar_Glista_desde_archivo(char* nombre_archivo, GList lista){
 	FILE *archivo = fopen(nombre_archivo,"r");
 
@@ -97,7 +86,7 @@ GList generar_Glista_desde_archivo(char* nombre_archivo, GList lista){
 	return lista;
 }
 
-//Dada una Persona, libera la memoria que ocupaba
+
 void destriur_persona(void* dato){
 	Persona persona = (Persona)dato;
 	free(persona->Nombre);
@@ -105,8 +94,7 @@ void destriur_persona(void* dato){
 	free(persona);
 }
 
-//Dada una lista y una funcion destruir, libera la memoria de la lista
-//aplicando destruir en todos los datos de sus nodos
+
 void gList_destruir (GList lista , Destruir d){
 	if(es_vacia(lista)) return;
 
@@ -122,7 +110,6 @@ void gList_destruir (GList lista , Destruir d){
 }
 
 
-//Genera un archivo de nombre "nombre_archivo" a partir de la lista
 void GList_a_archivo(GList lista, char* nombre_archivo) {
 	FILE* archivo = fopen(nombre_archivo, "w");
 	GList referencia = lista;
