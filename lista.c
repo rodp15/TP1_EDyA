@@ -70,7 +70,6 @@ GList agregar_nodo(GList lista, void* dato){
 	return lista;
 }
 
-
 GList generar_Glista_desde_archivo(char* nombre_archivo, GList lista){
 	FILE *archivo = fopen(nombre_archivo,"r");
 
@@ -78,14 +77,12 @@ GList generar_Glista_desde_archivo(char* nombre_archivo, GList lista){
 
 	char buff_nom[100], buff_pais[100];
 	int buff_edad;
-	for(;!feof(archivo);){
-		fscanf(archivo, " %[^,], %d, %[^\r\n]\r\n", buff_nom, &buff_edad, buff_pais);
+	while(EOF != fscanf(archivo, " %[^,], %d, %[^\r\n]\r\n", buff_nom, &buff_edad, buff_pais)){
 		lista = agregar_nodo(lista, crear_persona(buff_nom, buff_edad, buff_pais));
 	}
 	fclose(archivo);
 	return lista;
 }
-
 
 void destriur_persona(void* dato){
 	Persona persona = (Persona)dato;
@@ -93,7 +90,6 @@ void destriur_persona(void* dato){
 	free(persona->Pais);
 	free(persona);
 }
-
 
 void gList_destruir (GList lista , Destruir d){
 	if(es_vacia(lista)) return;
@@ -108,7 +104,6 @@ void gList_destruir (GList lista , Destruir d){
 	d(i->dato);
 	free(i);
 }
-
 
 void GList_a_archivo(GList lista, char* nombre_archivo) {
 	FILE* archivo = fopen(nombre_archivo, "w");
