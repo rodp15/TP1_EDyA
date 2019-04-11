@@ -3,15 +3,13 @@
 int main(){
 	srand(time(NULL));
 	char **Nombres, **Paises;
-	int size = 300;
+	int size = 2048;
 
 	alojar_lista(&Nombres, size);
 	alojar_lista(&Paises, size);
 
-
 	int cant_nombres = carga_archivos("nombres.txt", &Nombres, size);
 	int cant_paises = carga_archivos("paises.txt", &Paises, size);
-
 
 	if (cant_nombres == 0 || cant_paises == 0) {
 		printf("Error al leer los archivos de nombres y paises. Alguno o ambos no existe o esta vacio\n");
@@ -29,6 +27,7 @@ int main(){
 	aplica_map(lista_personas, "segundo_map.txt", &messi, &copiar_persona, &destriur_persona);
 	aplica_filter(lista_personas, "primer_filter.txt", &peruanos, &copiar_persona, &destriur_persona);
 	aplica_filter(lista_personas, "segundo_filter.txt", &mayores50, &copiar_persona, &destriur_persona);
+	gList_destruir(lista_personas, &destriur_persona);
 
 	return 0;
 }

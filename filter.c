@@ -30,3 +30,10 @@ GList filter(GList lista_original, Predicado p, Copia c){
 	}
 	return lista_filtrada;
 }
+
+void aplica_filter(GList lista, char* salida, Predicado p, Copia c, Destruir d){
+	GList lista_filtrada = crear_lista();
+	lista_filtrada = filter(lista, p, c);
+	GList_a_archivo(lista_filtrada, salida);
+	gList_destruir(lista_filtrada, d);
+}
