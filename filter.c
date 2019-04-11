@@ -10,8 +10,11 @@ int peruanos(void* dato){
 	return (strcmp(((Persona)dato)->Pais, "Perú") == 0);
 }
 
-//Retorna una lista filtrada por el predicado p de la lista_original,
-//copiandola con la funcion c
+/*
+filter toma una lista (lista_original) y la recorre.
+Verifica que los datos de cada nodo cumplan con un predicado (que viene dado por la funcion p) copiando los datos
+con la funcion Copia (c) si cumplen el Predicado (p).
+*/
 GList filter(GList lista_original, Predicado p, Copia c){
 	if(es_vacia(lista_original)) return lista_original;
 

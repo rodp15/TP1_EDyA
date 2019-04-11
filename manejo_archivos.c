@@ -33,12 +33,13 @@ int carga_archivos(char* nombre_archivo, char*** Lineas, int size){
 	if (c == EOF) return 0;
 	ungetc(c, archivo);
 
-	while(!feof(archivo)){
-		fgets(aux, 100, archivo);
+	while(EOF != fscanf(archivo, "%[^\r\n]\r\n", aux)){
+
     largo = string_length(aux);
-    (*Lineas)[cant_lineas] = malloc(sizeof(char) * (largo + 1) * 2);
+    (*Lineas)[cant_lineas] = malloc(sizeof(char) * (largo + 1));
+    aux[largo] = '\0';
+
     strcpy((*Lineas)[cant_lineas], aux);
-		(*Lineas)[cant_lineas][largo] = '\0';
 
     printf("%d %s\n", cant_lineas, (*Lineas)[cant_lineas]);
 

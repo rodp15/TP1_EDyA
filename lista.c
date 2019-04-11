@@ -90,7 +90,7 @@ GList generar_Glista_desde_archivo(char* nombre_archivo, GList lista){
 	char buff_nom[100], buff_pais[100];
 	int buff_edad;
 	for(;!feof(archivo);){
-		fscanf(archivo, " %[^,], %d, %[^\n]", buff_nom, &buff_edad, buff_pais);
+		fscanf(archivo, " %[^,], %d, %[^\r\n]\r\n", buff_nom, &buff_edad, buff_pais);
 		lista = agregar_nodo(lista, crear_persona(buff_nom, buff_edad, buff_pais));
 	}
 	fclose(archivo);
