@@ -11,6 +11,8 @@ int main(){
 	int cant_nombres = carga_archivos("nombres.txt", &Nombres, size);
 	int cant_paises = carga_archivos("paises.txt", &Paises, size);
 
+	printf("%d %d\n",cant_nombres, cant_paises);
+
 	if (cant_nombres == 0 || cant_paises == 0) {
 		printf("Error al leer los archivos de nombres y paises. Alguno o ambos no existe o esta vacio\n");
 		return 0;

@@ -22,7 +22,6 @@ GList crear_lista(){
 	return NULL;
 }
 
-
 int es_vacia(GList lista){
 	return lista == NULL;
 }

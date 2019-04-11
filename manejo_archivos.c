@@ -7,15 +7,10 @@ void alojar_lista(char*** lista, int size){
 int carga_archivos(char* nombre_archivo, char*** Lineas, int size){
 	FILE* archivo = fopen(nombre_archivo, "r");
 	int cant_lineas = 0, largo;
-	char c, aux[100];
+	char aux[100];
 
-	//corroboramos la existencia del archivo
-	if (archivo == NULL) return 0;
-
-	//verificamos si esta vacio
-	c = fgetc(archivo);
-	if (c == EOF) return 0;
-	ungetc(c, archivo);
+	//Corroboramos la existencia del archivo
+  assert("No existe el archivo ingresado de lectura" && archivo);
 
 	while(EOF != fscanf(archivo, "%[^\r\n]\r\n", aux)){
 
@@ -26,7 +21,7 @@ int carga_archivos(char* nombre_archivo, char*** Lineas, int size){
     strcpy((*Lineas)[cant_lineas], aux);
 		cant_lineas++;
 
-    //Si la cantidad de lineas coincide con el tamaño de la lista,
+    //Si la cantidad de lineas coincide con el tamanio de la lista,
     //realocamos la lista con el doble de espacio
     if (cant_lineas == size){
       size *= 2;
@@ -36,7 +31,8 @@ int carga_archivos(char* nombre_archivo, char*** Lineas, int size){
 	}
 
 	fclose(archivo);
-	return --cant_lineas;
+
+	return cant_lineas;
 }
 
 void generacion_archivo_personas(char* nombre_salida, char** paises, char** nombres, int cant_nombres, int cant_paises, int cantidad_lineas){

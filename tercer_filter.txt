@@ -1,0 +1,983 @@
+Fidel, 35, Apia
+Ricarda, 24, Gran Bretaña
+Etelinda, 33, Holanda
+Flora, 17, Ámsterdam
+Bartolo, 44, Estados Unidos
+Sibila, 12, Islas Caimán
+Cesira, 29, Angola
+Héctor, 10, Kenia
+Tatiana, 34, Beirut
+Pelagio, 9, Liechtenstein
+Nuncio, 13, Minsk
+Domacal, 25, Bolivia
+Franca, 27, Liberia
+Ayelén, 11, España
+Serafina, 50, Uruguay
+Danah, 22, Kuala Lumpur
+Palma, 2, Mauricio
+Giuliano, 49, Samoa
+Coyan, 44, Abuya
+Glauco, 7, Macedonia
+Aileen, 35, Sudo Georgia y los Islas Sandwich del Sur
+Génesis, 8, República Guinea
+Valentín, 37, Teherán
+Robustiano, 38, Bamako
+Walter, 12, Islandia
+Rinaldo, 41, Afganistán
+Hildegarda, 40, Holanda
+Calista, 3, Rabat
+Gerardo, 49, Teherán
+Laisa, 47, Argel
+Jenara, 36, Libia
+Baudilio, 16, Ghana
+Alcira, 4, Ereván
+Elbia, 39, Palau
+Stefanía, 27, Libreville
+Noel, 6, Ulán Bator
+Tabita, 14, Taskent
+Crescencia, 19, Grecia
+Pusaki, 23, La Valeta
+Serafina, 43, Mónaco
+Lucinda, 28, Líbano
+Delfino, 49, Marianas del Nort
+Indiana, 14, Países Bajos
+Grimaldo, 22, Nukualofa
+Ermenilda, 44, Nairobi
+Rainero, 28, Eslovaquia
+Desdémona, 28, Tailandia
+Zaqueo, 1, Cabo Verde
+Trinidad, 15, Nueva Caledonia
+Hermán, 29, Bielorrusia
+Agar, 30, Suecia
+Marysol, 33, Santa Lucía
+Gabriel, 31, Isla Bouvet
+Hiram, 2, Brazzaville
+Jenara, 48, República Dominicana
+Siglinda, 49, Bélgica
+Nicasio, 36, Puerto España
+Nehemías, 25, Yamusukro
+Cleopatra, 39, Panamá
+Damocles, 40, Argel
+Alejandrina, 6, Vaticano
+Marcos, 13, Yibuti
+Ambrosio, 27, Montenegro
+Albana, 28, Viena
+Ciro, 37, Chile
+Estefanía, 32, Islas Malvinas
+Elmen, 7, Estocolmo
+Taciano, 18, Estocolmo
+Inés, 31, Belice
+Hada, 33, Berlín
+Teodorico, 48, Ucrania
+Andresa, 21, Kampala
+Amancio, 38, Accra
+Odiseo, 30, Micronesia
+Lucinda, 30, Manila
+Dorana, 1, Túnez
+Casto, 46, Filipinas
+Ulises, 8, Tallin
+Edit, 9, Kampala
+Charlote, 39, Isla Christmas
+Florián, 39, Malta
+Neftalí, 9, Reino Unido
+Armanda, 42, Territorio Británico del Océano Indico
+Saverio, 50, Angola
+Rina, 21, Tonga
+Antígona, 29, Sudáfrica
+Patroclo, 36, Nairobi
+Verónica, 4, Washington D. C.
+Santo, 24, Isla Bouvet
+Huaiquil, 31, Bruselas
+Higinio, 17, Guernsey
+Celestino, 32, Belice
+Estrella, 17, Ciudad del Vaticano
+Jacarandá, 6, Nom Pen
+Fortuna, 3, Teherán
+Mirabel, 6, Argentina
+Dick, 41, India
+Natasha, 22, Puerto Moresby
+Dylan, 45, Dublín
+Graciela, 6, Zagreb
+Germana, 48, Tegucigalpa
+Fiona, 9, Territorio Británico del Océano Indico
+Clorindo, 17, Basseterre
+Casandra, 44, Niue
+Dona, 27, Puerto Moresby
+Vicente, 17, Azerbaiyán
+Dulce, 17, Basseterre
+Renán, 8, Daca
+Clío, 21, Asunción
+Artemio, 6, Kuwait
+Samantha, 6, Singapur
+Epulén, 39, Belmopán
+Taciano, 30, Antillas Holandesas
+Ariano, 8, Kabul
+Hipólito, 44, Mascate
+Javier, 49, Thimphu
+Donatella, 42, Guyana
+Penélope, 3, San Salvador
+Ezequiel, 23, Hanói
+Francine, 1, Basseterre
+Iñaki, 48, Lesotho
+Leila, 3, Nairobi
+Nélida, 49, Nueva Zelanda
+Candelaria, 6, Niue
+Perla, 31, Kiribati
+Eleonor, 28, Oslo
+Jael, 46, Atenas
+Justino, 48, Bangkok
+Kin, 8, Windhoek
+Orieta, 42, Minsk
+Icaro, 8, República Guinea
+Karina, 33, Yamusukro
+Blanca, 16, Túnez
+Laurencia, 33, Santo Tomé
+Siglinda, 35, Madagascar
+Remedios, 47, Kingston
+Jana, 10, Malta
+Pangui, 23, Micronesia
+Paolo, 11, Francia
+Gabriel, 48, Qatar
+Frida, 38, Pretoria
+Huara, 11, Sofía
+Amadeo, 39, Letonia
+Josemaría, 24, Gran Bretaña
+Robertina, 19, Tanzania
+Reginaldo, 47, Bakú
+Emir, 33, Brasil
+Emeterio, 48, Lusaka
+Epulén, 48, Lomé
+Santina, 23, Jersey
+Mafalda, 31, Bután
+Venus, 19, Mozambique
+Christa, 11, Asjabad
+Soledad, 33, Tiflis
+Glenda, 1, México
+Elis, 38, Macedonia
+Macedonio, 23, Malawi
+Reina, 28, Macedonia
+Delila, 50, Adís Abeba
+Froilán, 38, España
+Oria, 46, Luanda
+Jaime, 18, Astaná
+Roy, 41, Ecuador
+Arminda, 8, ﻿Aruba
+Yerimen, 10, Tuvalu
+Dulcea, 42, Sri Jayawardenapura Kotte
+Turquesa, 24, Viena
+Niceto, 13, Eritrea
+Ailén, 30, Bratislava
+Amancio, 19, Líbano
+Procopio, 31, Guadalupe
+Roberta, 6, Omán
+Tertuliano, 13, Yemen
+Hervé, 44, Belmopán
+Mirinda, 44, Lilongüe
+Ludovico, 47, Zaire
+Ula, 10, Iraq
+Gianfranco, 4, Bahrein
+Cleofé, 32, Brunei Darussalam
+Lihué, 46, Nairobi
+Balbo, 19, Zaire
+Danilo, 38, Namibia
+Elvio, 10, Antananarivo
+Toribio, 25, Chad
+Gino, 3, España
+Anselmo, 31, Podgorica
+Huechu, 6, Kampala
+Gustavo, 33, Brasilia
+Lighuen, 20, Gran Bretaña
+Adelfo, 24, Santo Tomé
+Prudencia, 2, Ruanda
+Silvana, 48, Asmara
+Güendalina, 28, Nicaragua
+Tatiana, 16, Pekín
+Doménico, 2, Bangui
+Dalmira, 6, Ereván
+Ginette, 45, Sri Lanka
+Guntero, 48, Nigeria
+Gea, 25, Líbano
+Christa, 10, Malta
+Catarina, 36, Tailandia
+Fabia, 21, Manila
+Cástor, 25, Mascate
+Tertuliano, 49, Majuro
+Vilma, 31, Gran Bretaña
+Tais, 39, Vaticano
+Hildegunda, 25, Damasco
+Pangui, 30, Jamaica
+Teseo, 27, Camboya
+Casiodoro, 5, Praia
+Yukari, 45, Uagadugú
+Roxy, 21, El Salvador
+Tito, 21, Belice
+Anaís, 28, Camboya
+Anunciación, 35, Mongolia
+Ramiro, 15, Francia
+Gal, 13, Niger
+Virgilio, 8, Funafuti
+Marina, 27, Castries
+Ben, 24, Niamey
+Judit, 42, Kingstown
+Argentina, 28, Macedonia
+Giselda, 23, Fidji
+Plutarco, 26, Bamako
+Jorgelina, 38, Lesotho
+Ivo, 42, Irán
+Edy, 22, Andorra
+Karenina, 22, Isla Man
+Bartolomé, 27, Antillas Holandesas
+Adalgisa, 34, Afganistán
+Orestes, 5, Swazilandia
+Cristóbal, 31, Wallis y Futuna
+Farid, 25, Italia
+Demócrito, 3, Granada
+Germánico, 13, Bagdad
+Casia, 48, Panamá
+Telmo, 11, Eslovaquia
+Milagros, 42, Vaduz
+Eugenia, 6, Santo Domingo
+Armando, 39, Doha
+Icaro, 29, Liubliana
+Icaro, 38, Wellington
+Brina, 44, Islas Caimán
+Hilarión, 47, Adís Abeba
+Michela, 18, Dinamarca
+Xiomara, 20, Islas Caimán
+Elisea, 16, Azerbaiyán
+Jerónimo, 5, Dinamarca
+Daría, 15, Rumanía
+Dulcidio, 9, Lima
+Nidia, 16, Pionyang
+Ondina, 7, Yibuti
+Ariano, 33, Panamá
+Bernardita, 40, Alemania
+Cornelio, 18, Argelia
+Emilia, 5, San Salvador
+Demián, 36, Dublín
+Pichi, 37, Brunei Darussalam
+Menelao, 1, Perú
+Amarilis, 23, Katmandú
+Camilo, 36, Asjabad
+Delfina, 38, Isla Pitcairn
+Simón, 5, Tailandia
+Cirilo, 16, Burundi
+Lahuen, 37, Jordania
+Perseo, 28, Canberra
+Roldán, 22, Kuala Lumpur
+Huelten, 8, Argentina
+Débora, 36, Serbia
+Ecio, 17, Caracas
+Braulio, 17, Uagadugú
+Yukari, 46, Omán
+Marisol, 23, Kabul
+Nuriel, 8, Reunión
+Lila, 21, Libia
+Rosa, 1, Santo Tomé
+William, 38, Argelia
+Gutierre, 46, Yamena
+Evangelino, 32, Israel
+Melín, 29, Washington D. C.
+Ornella, 18, España
+Venus, 18, Accra
+Godiva, 9, Nueva Zelanda
+Yaima, 40, Daca
+Gadiel, 9, Guyana
+Azul, 23, Hanói
+Michay, 30, Nicosia
+Elvira, 12, Yibuti
+Bono, 19, Sudáfrica
+Leda, 18, Dominica
+Cordelia, 14, México
+Bernardette, 1, Monrovia
+Lanfranco, 15, Uagadugú
+Elmen, 9, Kuwait City
+Oyan, 13, Puerto Príncipe
+Antú, 29, Cuba
+Dylan, 14, India
+Lorenza, 28, Niue
+Damasia, 50, Comores
+Lautaro, 3, Túnez
+Paz, 26, Territorio Británico del Océano Indico
+Solón, 14, Antillas Holandesas
+Adonis, 42, Bucarest
+Gamal, 25, Venezuela
+Regina, 27, Bermudas
+Acacio, 6, Mayotte
+Silvano, 13, Pakistán
+Febe, 44, Brasil
+Saunders, 12, Bangui
+Cesario, 33, El Salvador
+Irineo, 45, Islas Feroe
+Silvano, 16, Guayana Francesa
+Godiva, 40, Hanói
+Albino, 41, Trinidad y Tobago
+Paloma, 47, Azerbaiyán
+Aníbal, 44, Bakú
+Marianela, 8, Jamaica
+Urso, 25, Helsinki
+Igor, 31, Georgetown
+Jael, 5, Botswana
+Oyan, 50, Pionyang
+Galen, 29, Guernsey
+Duham, 4, Ankara
+Albino, 19, Estocolmo
+Adamina, 2, Liubliana
+Lilien, 28, Chisináu
+Claribel, 48, Skopie
+Teócrito, 27, Malabo
+Lucero, 34, Tailandia
+Sebastiana, 48, Dinamarca
+Carmiña, 47, Santa Elena
+Tiago, 29, Damasco
+George, 46, Serbia
+Balbino, 45, Tiflis
+Demetrio, 43, La Habana
+Fiorenza, 14, Malí
+Decio, 19, Eslovaquia
+Acacio, 19, Sucre
+Vera, 9, Puerto España
+Carmen, 28, Samoa
+Madonna, 37, Bielorrusia
+Namuncurá, 44, Togo
+Teobaldo, 11, Austria
+Alwyn, 28, Bakú
+Wally, 16, Paraguay
+Gardenia, 21, Nueva Zelanda
+Martín, 37, Paraguay
+Anaís, 46, Guinea Bissau
+Calvin, 50, Biskek
+Balbina, 46, Minsk
+Alexa, 22, España
+Vicente, 26, Norfolk Island
+Orfeo, 9, Pristina
+Tiare, 27, Costa Rica
+Taci, 18, Barbados
+Berengario, 32, Bisáu
+Harvey, 45, Timor Oriental
+Ella, 25, Jerusalén Este
+Aisha, 44, Islas Malvinas
+Valquiria, 16, Bélgica
+Ingrid, 20, Astaná
+Michela, 26, Noruega
+Menandro, 36, Nigeria
+Amancio, 14, Londres
+Heros, 35, Vanuatu
+Doin, 12, Costa de Marfil
+Velia, 17, Naipyidó
+Amelina, 2, República Centroafricana
+Lanzarote, 38, Estonia
+Judith, 37, Ecuador
+Catón, 8, Ecuador
+Amaranta, 28, Podgorica
+Quinto, 8, Georgetown
+Yaima, 39, Apia
+Melinda, 18, Pakistán
+Macabeo, 14, Laos
+Octavia, 10, Albania
+Xenia, 15, Archipiélago de Svalbard
+Antonio, 39, Sarajevo
+Nuriya, 1, Yakarta
+Ladislao, 18, Djibouti
+Odo, 3, Singapur
+Ermenilda, 35, Canadá
+Hernán, 3, Niamey
+Livio, 28, Guinea Ecuatorial
+Fabio, 45, Santo Domingo
+Milenka, 26, Gibraltar
+Américo, 32, Copenhague
+Madelaine, 42, Ghana
+Blas, 3, Bangkok
+Claire, 20, Brazzaville
+Perfecto, 38, Montenegro
+Yunca, 7, Islandia
+Anita, 33, Uagadugú
+Pipino, 45, Canadá
+Polidoro, 27, China
+Malva, 15, Argentina
+Amaranto, 38, Bakú
+Macabeo, 21, Rabat
+Guerrico, 21, Senegal
+Robertina, 18, Montenegro
+Alejandra, 18, Honiara
+Eneas, 6, Portugal
+Fabricio, 48, Madagascar
+Doin, 5, Yibuti
+Teodolina, 5, Palikir
+Lucelia, 40, Porto-Novo
+García, 38, Santiago
+Filis, 10, Letonia
+Xenia, 12, Tailandia
+Dalina, 49, Granada
+Teodolinda, 10, Isla Pitcairn
+Saturno, 15, Astaná
+Napoleón, 41, Gran Bretaña
+Kaled, 17, Asmara
+Natalia, 12, Argelia
+Modesto, 22, Burkina Faso
+Gretel, 48, Bagdad
+Manuela, 21, Mónaco
+Belén, 13, Doha
+Sharon, 31, Praia
+Gus, 29, Washington D. C.
+Eleodora, 32, Praga
+Alfio, 44, Accra
+Gal, 35, Maputo
+Benicio, 17, Bahamas
+Plutarco, 23, Podgorica
+Rubí, 46, Taiwan
+Numa, 19, Zambia
+Indalecio, 43, Port Louis
+Emir, 34, Riad
+Angel, 13, Majuro
+Georgette, 18, Letonia
+Príamo, 32, Dusambé
+Pelagio, 48, Ghana
+Hamílcar, 27, Singapur
+Indira, 25, Somalia
+Heliana, 22, Skopie
+Avelino, 32, Teherán
+Gildo, 4, Benín
+Elpidio, 40, Islas Cocos
+Cielo, 33, Naipyidó
+Honorato, 10, Bermudas
+Santos, 12, Estocolmo
+Filotea, 19, Riga
+Hilarión, 44, Majuro
+Casilda, 7, Egipto
+Expectación, 24, Skopie
+Berenice, 37, República del Congo
+Eleodoro, 14, Manila
+Elicio, 21, Yamusukro
+Itziar, 10, Malabo
+Thalía, 50, Ecuador
+Blanca, 16, Estados Unidos
+Evana, 4, Kampala
+Eliane, 25, Singapur
+Cono, 24, Jamaica
+Alwyn, 2, Guernsey
+Silvia, 48, Lomé
+Floriana, 34, Suiza
+Catriel, 40, Madrid
+Silvio, 13, Liechtenstein
+Enrico, 1, Panamá
+Fedro, 4, Isla De Navidad
+Anelisa, 24, Albania
+Samuel, 46, Jartum
+Deolinda, 45, Tuvalu
+Carla, 22, Bangladesh
+Gloria, 47, Tonga
+Leónidas, 3, República Dominicana
+Gena, 24, Kigali
+Anabella, 42, Nauru
+Cala, 5, Dakar
+Luciana, 43, Palestina
+Judith, 30, Santa Lucía
+Manón, 21, Kabul
+Mamerto, 44, Praia
+Leda, 45, Yaren
+Saula, 37, Santiago
+Plácido, 5, Tuvalu
+Harvey, 31, Santiago
+Donaldo, 50, Riga
+Fernando, 45, Francia
+Corín, 26, Palikir
+Eusebio, 39, Líbano
+Martino, 10, Sudo Georgia y los Islas Sandwich del Sur
+Eleodora, 36, Túnez
+Wilfrida, 41, Katmandú
+Martín, 22, Guatemala
+Orestes, 15, Brasil
+Segismundo, 33, Kigali
+Evelina, 19, Namibia
+Rayén, 14, Hanói
+Mariquena, 1, República Centroafricana
+Yanina, 12, Moroni
+Honorio, 23, Marianas del Nort
+Josefa, 28, Tallin
+Eliseo, 47, Thimphu
+Orieta, 25, Bután
+Claribel, 39, Turkmenistan
+Nicolás, 31, Guatemala
+Gioia, 2, El Cairo
+Brice, 29, Rusia
+Altair, 26, Timor Oriental
+Dick, 50, Gabón
+Heloisa, 42, Bangui
+Saturno, 6, Territorio Británico del Océano Indico
+Pelagio, 49, Ulán Bator
+Inal, 25, Dominica
+Bárbara, 9, Berlín
+Evelia, 33, Conakri
+Gimena, 41, Chad
+Paulina, 22, Bagdad
+Ben, 49, Lilongüe
+Valdemar, 37, Afganistán
+Tina, 33, Túnez
+Iris, 27, Paraguay
+Lavinia, 47, Zaire
+Atanasio, 23, Islas Turcas y Caicos
+Delicia, 3, Yakarta
+Sanders, 11, Thimphu
+Iguen, 30, Dublín
+Proclo, 50, Sudo Georgia y los Islas Sandwich del Sur
+Libera, 41, Praia
+Aníbal, 5, Turkmenistan
+Inal, 12, Samoa Americana
+Jordana, 29, Montserrat
+Shirly, 29, Zambia
+Basilio, 4, Reino Unido
+Nazaret, 15, Macao
+Josué, 13, Bisáu
+Duilio, 17, Bandar Seri Begawan
+Odila, 30, Sierra Leona
+Ruperto, 37, Chipre
+Circe, 41, Tarawa
+Kenzo, 26, Bosnia-Herzegovina
+Miranda, 15, Gabón
+Orfilia, 36, Vaticano
+Inti, 33, Guadalupe
+Andresa, 11, Guernsey
+Tirso, 23, Zambia
+Naomí, 3, Mbabane
+Archibaldo, 37, Tonga
+Brina, 29, Micronesia
+Julia, 32, Emiratos Árabes Unidos
+Matrona, 38, Santiago
+Woody, 27, Territorio Británico del Océano Indico
+Celia, 21, Niamey
+Emai, 25, Uganda
+Evaristo, 33, Jamaica
+Pal, 28, Malasia
+Dionisia, 1, Pekín
+Helena, 38, Zimbabwe
+Dara, 31, Chipre
+Pierina, 35, Kenia
+Pampa, 14, Nueva Zelanda
+Dalmacia, 7, Mayotte
+Thomasina, 13, Canberra
+Burt, 26, Varsovia
+Honorato, 1, Reikiavik
+Manón, 34, Guatemala
+Ulises, 34, Siria
+Raulino, 16, Yamusukro
+Leonela, 12, Togo
+Pampa, 30, Finlandia
+Faraón, 41, Canadá
+Amaya, 12, Islas Marshall
+Reinaldo, 6, Tokelau
+Edén, 16, Malawi
+Itatí, 43, Funafuti
+Malisa, 9, Nueva Caledonia
+Rosina, 18, Luxemburgo
+Tácito, 7, Nairobi
+Wilka, 43, Islas Cook
+Delicia, 31, Maseru
+Aurelia, 42, Turkmenistan
+Aki, 5, Porto-Novo
+Gregorio, 30, Alemania
+Traful, 49, Asmara
+Dánae, 37, Santo Domingo
+Florio, 2, Taiwan
+Crisóstomo, 35, Tegucigalpa
+Flaviana, 2, Papúa-Nueva Guinea
+Franco, 14, Yibuti
+Meulen, 26, Zimbabwe
+Zaida, 46, Guernsey
+Sharon, 25, Costa Rica
+Angelina, 28, Lituania
+Vinicio, 10, Etiopía
+Pilar, 33, Puerto Moresby
+Leonel, 42, Lomé
+Galeno, 50, Windhoek
+Arturo, 16, Nigeria
+Teodoro, 27, Bolivia
+Melchor, 7, Jartum
+Olindo, 35, Lisboa
+Sirio, 36, Montevideo
+Teodelina, 50, Suecia
+Hermenegilda, 44, Macao
+Carolina, 40, Islas Marshall
+Exuperia, 29, Isla Jan Mayen
+Aylwyn, 37, Malí
+Tácito, 39, Teherán
+Salvia, 40, Kuwait City
+Saturnino, 50, Asunción
+Dona, 23, Guadalupe
+Telma, 39, Andorra
+Agesilao, 2, Reino Unido
+Rayén, 2, Bucarest
+Galatea, 18, Camboya
+Saunders, 12, Maldivas
+Roxy, 12, Guernsey
+Eladio, 22, Moscú
+Renée, 36, Polinesia Francesa
+Alfonso, 32, Dili
+Dolly, 17, Nicosia
+Elpidio, 29, Sudán
+Gabriela, 6, Santiago
+Meulen, 16, Ciudad del Vaticano
+Brian, 34, Iraq
+Adelino, 21, Bamako
+Bernardino, 48, Berna
+Erma, 20, Tuvalu
+Marcial, 41, Laos
+Dylan, 35, Porto-Novo
+Madonna, 27, Lisboa
+Matilde, 7, Ereván
+Anabela, 20, Bangui
+Pompeo, 22, Dili
+Gardenia, 3, Botswana
+Gino, 47, Kenia
+Cielo, 28, Antártida
+Isaías, 38, Egipto
+Roldán, 39, Bangkok
+Maximina, 30, ﻿Aruba
+Oyan, 9, Sudo Georgia y los Islas Sandwich del Sur
+Menandro, 39, Dodoma
+Alegra, 35, Moroni
+Isolina, 2, Singapur
+Natalí, 39, Damasco
+Marín, 2, Macedonia
+Nahim, 24, Islas Virgenes Británicas
+Araceli, 7, Islas Malvinas
+Edén, 14, Islas Caimán
+Ale, 8, Bolivia
+Yung, 36, Alemania
+Aser, 42, Malta
+Poncio, 6, Roseau
+Iñigo, 4, República Checa
+Josefina, 35, Kigali
+Edgarda, 4, Mongolia
+Idalina, 17, Eritrea
+Lola, 19, Sudo Georgia y los Islas Sandwich del Sur
+Serena, 30, Sudáfrica
+Calíope, 9, Timor Oriental
+Sonia, 8, Belmopán
+Elmin, 36, Irlanda
+Brenda, 30, París
+Giorgio, 42, Ciudad del Vaticano
+Saturnino, 43, Varsovia
+Sally, 29, Senegal
+Pablo, 47, Varsovia
+Medea, 10, Mauricio
+Lancelot, 15, Jordania
+Harvey, 45, Saint John
+Eusebio, 5, Luanda
+Emelina, 4, Marruecos
+Rosángela, 24, Nukualofa
+Amparo, 32, Libreville
+Adrián, 33, Astaná
+Gail, 4, Túnez
+Gandolfo, 25, Chipre
+Secundino, 26, Kenia
+Itziar, 3, Iraq
+Catalin, 28, Kuwait
+Octavio, 2, Venezuela
+Carmela, 50, Conakri
+Encarnación, 9, Brunei Darussalam
+Parmenio, 38, Colombia
+Eduarda, 2, Riga
+Giselda, 5, Yaren
+Matilde, 22, Tallin
+Aniceto, 7, Perú
+Petronio, 7, Bratislava
+Silvestre, 47, Isla Christmas
+Aída, 24, Nuakchot
+Karena, 3, República Centroafricana
+Petronilo, 17, Vaticano
+Plácida, 25, Ottawa
+Aladino, 23, Samoa
+Acacia, 6, Wellington
+Carlos, 14, Buyumbura
+Mijael, 42, Sudán
+Ariel, 21, Accra
+Ethel, 3, Mbabane
+Sofía, 34, República Checa
+Agustina, 26, Brasil
+Erica, 10, Guatemala
+Midas, 37, Bangui
+Floro, 41, Podgorica
+Graciela, 24, Saná
+Taciana, 47, Singapur
+Cindy, 19, Burundi
+Viviano, 7, Ámsterdam
+Elina, 23, Corea del Norte
+Ricardo, 3, Sri Jayawardenapura Kotte
+Claus, 6, Holanda
+Albino, 13, Moscú
+Aparicio, 20, Caracas
+Afrodita, 11, Taiwan
+Rosendo, 19, Timor Oriental
+Maitena, 20, Tanzania
+Jesús, 5, Kiev
+Crisóforo, 5, Archipiélago de Svalbard
+Arcángel, 33, Brasil
+Honorina, 10, Bucarest
+Pangui, 19, Isla Ascension
+Europa, 44, Uruguay
+Sandro, 42, Damasco
+Afrodisio, 13, Madagascar
+Sacha, 25, Podgorica
+Inan, 29, Finlandia
+Radamés, 19, Lima
+Cacha, 43, Kiev
+Dana, 40, Ecuador
+Vanda, 49, Yibuti
+Arquímedes, 13, Sri Lanka
+Winifreda, 10, Viena
+Adriano, 28, Turquía
+Cleopatra, 49, Martinica
+Armonía, 21, España
+Celestino, 9, Macedonia
+Agamenón, 39, Costa de Marfil
+Urania, 22, Moroni
+Eluney, 4, Vientián
+Teo, 10, Fidji
+Tayil, 44, ﻿Aruba
+Luna, 15, Vientián
+Benedicta, 15, Tuvalu
+Cruz, 43, España
+Oyan, 18, Países Bajos
+Napoleón, 11, Accra
+Crescencia, 50, Letonia
+Adelio, 19, Bermudas
+Cipriano, 43, Polonia
+Odilia, 14, Brasil
+Plinio, 42, Guayana Francesa
+Argentino, 44, República Democrática del Congo
+Celedonio, 15, Sudáfrica
+Palmira, 2, Niue
+Patricio, 39, Ruanda
+Justo, 46, Reikiavik
+Ursa, 22, Gabón
+Simón, 17, Namibia
+Julia, 45, Adís Abeba
+Crispín, 22, Ecuador
+Elin, 35, Malí
+Justo, 21, Maseru
+Severiano, 30, Majuro
+Teoberto, 30, Territorio Británico del Océano Indico
+Marta, 17, Guinea Bissau
+Alberto, 47, Angola
+Yamila, 11, Atenas
+Hilarión, 32, Gabón
+Mohamed, 44, Tanzania
+Giovanna, 2, Colombia
+Tancredo, 29, Londres
+Melín, 48, Reunión
+Cynthia, 33, República Checa
+Francine, 30, Astaná
+Rosa, 28, República Centroafricana
+Francine, 9, Nom Pen
+César, 22, Biskek
+Aldo, 47, Reikiavik
+Silvino, 29, Antártida
+Fidela, 10, Caracas
+Jessica, 15, Emiratos Árabes Unidos
+Aladino, 13, Bahrein
+Uriana, 27, Guadalupe
+Elina, 43, Malabo
+Didier, 50, Port Louis
+Armentaria, 9, La Habana
+Lanfranco, 18, Chipre
+Marciano, 31, República Checa
+Quillén, 25, Saint John
+Alberta, 17, Archipiélago de Svalbard
+Laurentino, 38, Zimbabwe
+Alejandrina, 26, Panamá
+Aimara, 48, Francia
+Tránsito, 44, Tuvalu
+Olimpia, 32, Chad
+George, 10, Varsovia
+Fidel, 7, Madagascar
+Ilona, 19, Rusia
+Nadir, 20, Qatar
+Cruz, 31, Santo Tomé
+Taurino, 23, Manila
+Belinda, 8, Hanói
+Prisca, 3, Sierra Leona
+Fortunata, 42, Vaticano
+Christa, 14, Asunción
+Brad, 38, Israel
+Rosella, 6, Libreville
+Flaviana, 43, Rusia
+Renato, 26, Alemania
+Abner, 3, Sudán
+Haydeé, 11, Montserrat
+Osmán, 22, Togo
+Coihue, 22, Ottawa
+Amado, 36, Guinea Ecuatorial
+Inan, 18, Vaticano
+Ester, 8, Montserrat
+Getulio, 35, Bisáu
+Balbina, 16, Sucre
+Etelvina, 16, Kuala Lumpur
+Marilú, 32, Laos
+Covadonga, 2, Adís Abeba
+Ferdinando, 12, Emiratos Árabes Unidos
+Medardo, 32, Pionyang
+Severiano, 20, Santa Elena
+Ulfrido, 18, Isla Pitcairn
+Arsenio, 12, Riga
+Cinthia, 8, Asjabad
+Eros, 44, Kingston
+Garibaldi, 6, Washington D. C.
+Ula, 7, Paraguay
+Ervin, 48, Islas Caimán
+Orfeo, 34, Buyumbura
+Pegaso, 45, Canberra
+Raimundo, 39, Guinea Bissau
+Luisa, 30, Eslovenia
+Nahum, 20, Jersey
+Hannah, 23, Pekín
+Restituto, 19, Isla Jan Mayen
+Rodrigo, 38, Palestina
+Tristán, 18, Vietnam
+Percival, 49, Costa de Marfil
+Patricio, 47, Singapur
+Guillermina, 46, Guam
+Helvecia, 40, Islas Malvinas
+Demóstenes, 17, Moscú
+Yaco, 20, Sáhara Occidental
+Natalia, 12, Monrovia
+Delfino, 5, Ankara
+Gualterio, 44, Luanda
+Absalón, 5, Podgorica
+Baruc, 42, Roma
+Milton, 39, Surinam
+Neftalí, 6, Bucarest
+Heródoto, 37, Siria
+Elma, 9, Camerún
+Viviana, 36, Serbia
+Pangui, 23, Timor Oriental
+Laureano, 41, Andorra
+Ray, 12, Islas de Heard y McDonald
+Angelina, 6, Nueva Delhi
+Gian, 44, Tarawa
+Jorge, 16, Gibraltar
+Eleodoro, 15, San Salvador
+Mainque, 28, Santo Tomé
+Dihue, 23, Andorra la Vieja
+Milagros, 25, Uruguay
+Delicia, 16, San Cristobal y Nevis
+Etel, 1, Honduras
+Catón, 5, Islas Cook
+Ozana, 2, Teherán
+Elcira, 37, Albania
+Teócrito, 36, Moroni
+Gutierre, 9, Sáhara Occidental
+Orangel, 16, Letonia
+Uldarico, 7, Pakistán
+Isolde, 17, Bandar Seri Begawan
+Robertina, 46, Bosnia-Herzegovina
+Gea, 25, Seychelles
+Tanya, 45, Malí
+Araceli, 47, Vaticano
+Baldomero, 35, Bután
+Selim, 14, Nicaragua
+Laila, 17, Haiti
+Lola, 50, Wallis y Futuna
+Bernabela, 6, Bélgica
+Traful, 20, Nairobi
+Pastora, 4, Venezuela
+Doménico, 14, Belgrado
+Teofrasto, 18, Bangladesh
+Bernabela, 22, Wellington
+Hamílcar, 38, San José
+Sandrine, 22, Noruega
+Tacio, 35, Pionyang
+Ronan, 13, Brazzaville
+Jenaro, 7, Maputo
+Fátima, 38, Guyana
+Cleopatra, 13, Pekín
+Malaquías, 16, Nigeria
+Ambrosía, 5, Zagreb
+Lucerne, 32, Vietnam
+Lucy, 16, Mayotte
+Jezabel, 21, Bamako
+Pepino, 46, Islandia
+Chantal, 33, Tuvalu
+Liu, 16, Praga
+Eliane, 9, Francia
+Brunilda, 35, Surinam
+Astrid, 36, Manama
+Urbano, 32, Ciudad del Vaticano
+Gotardo, 11, Trípoli
+Baltasar, 30, Sáhara Occidental
+Marcelo, 30, Puerto Príncipe
+Maitena, 49, Malasia
+Piedad, 27, Eslovaquia
+Alí, 21, Uganda
+Robinson, 22, Luxemburgo
+Ricarda, 4, Georgia
+Egidio, 12, Guinea Bissau
+Carmela, 43, Jersey
+Ferdinando, 20, Mascate
+Columba, 10, Viena
+Elmen, 29, Madagascar
+Jano, 49, París
+Antonieta, 2, Port Vila
+Enzo, 13, Groenlandia
+Albana, 16, Castries
+Ozana, 9, Kingstown
+Mirna, 45, Haiti
+Cono, 17, Uagadugú
+Iraida, 15, Maputo
+Bogart, 28, Tokio
+Atanasio, 30, Namibia
+Heidi, 1, Malé
+Munir, 12, Majuro
+Epumari, 39, Conakri
+Odo, 49, Guinea Ecuatorial
+Kioko, 46, Croacia
+Uriel, 29, Letonia
+Nicole, 48, Chisináu
+Myriam, 16, Rusia
+Pangui, 45, Montevideo
+Hedy, 15, Iraq
+Bogart, 6, Países Bajos
+Inca, 7, Reikiavik
+Gianfranco, 11, Saint George
+Liberata, 15, Bruselas
+Torcuato, 50, Lusaka
+Cesira, 12, Irán
+Malco, 24, Andorra la Vieja
+Salvina, 29, Bratislava
+Eberardo, 47, Puerto España
+Yunca, 20, República Checa
+Gal, 23, Sofía
+Ivonne, 8, Kingston
+Ulfrido, 5, Gambia
+Glory, 19, Mbabane
+Eudoro, 12, La Valeta
+Nabuconodosor, 44, Corea del Sur
+Heberto, 19, Tanzania
+Serapia, 23, Paraguay
+Llechi, 27, Santa Elena
+Octaviano, 36, Santiago
+Filis, 24, San Vincente y Granadinas
+Lutero, 35, Túnez
+Loreley, 10, Praga
+Teófila, 23, Lesotho
+Julián, 13, Astaná
+Raimundo, 7, Bratislava
+Abraham, 18, Somalia
+Eneas, 23, Tirana
+Gumersindo, 49, Islas Cocos
+Fidel, 43, Antigua y Barbuda
+Yung, 13, Guernsey
+Justo, 5, Nueva Zelanda
+Nehuen, 43, Kabul
+Damocles, 7, México
+Hécuba, 19, Londres
+Paco, 24, Letonia
+Camilla, 31, Bélgica
+Menandro, 41, Taipéi
+Daniela, 46, Bogotá
+Gualberto, 42, Nauru
+Clodomira, 4, Londres
+Olimpia, 44, Yibuti
+Pegaso, 22, Yuba
+Isaura, 15, Tuvalu
+Palqui, 2, Malabo
