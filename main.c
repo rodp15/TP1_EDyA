@@ -2,8 +2,19 @@
 
 int main(){
 	srand(time(NULL));
-	char Nombres[4000][100], Paises[4000][100];
-	int cant_nombres = carga_archivos("nombres.txt",Nombres), cant_paises=carga_archivos("paises.txt", Paises);
+	char **Nombres, **Paises;
+	int size = 300;
+
+	alojar_lista(&Nombres, size);
+	alojar_lista(&Paises, size);
+
+
+	int cant_nombres = carga_archivos("nombres.txt", &Nombres, size);
+	int cant_paises = carga_archivos("paises.txt", &Paises, size);
+
+
+	printf("???\n" );
+
 
 	if (cant_nombres == 0 || cant_paises == 0) {
 		printf("Error al leer los archivos de nombres y paises. Alguno o ambos no existe o esta vacio\n");
