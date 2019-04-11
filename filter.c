@@ -13,24 +13,20 @@ int peruanos(void* dato){
 //Retorna una lista filtrada por el predicado p de la lista_original,
 //copiandola con la funcion c
 GList filter(GList lista_original, Predicado p, Copia c){
-	GList lista_filtrada = crear_lista(), i;
+	if(es_vacia(lista_original)) return lista_original;
+
+	GList lista_filtrada = crear_lista(), referencia = lista_original;
 	void* dato_copia;
 
-	for(; !es_vacia(lista_original) && !p(lista_original->dato); lista_original = lista_original->sig);
-
-	if(!es_vacia(lista_original)){
-		dato_copia = c(lista_original->dato);
-		lista_filtrada = crear_nodo(dato_copia);
-		lista_original = lista_original->sig;
-		i = lista_filtrada;
-	}
-
-	for(; !es_vacia(lista_original) ; lista_original = lista_original->sig){
+	for(;lista_original->sig != referencia; lista_original = lista_original->sig){
 		if(p(lista_original->dato)){
 			dato_copia = c(lista_original->dato);
-			i->sig = crear_nodo(dato_copia);
-			i = i->sig;
+			lista_filtrada = agregar_nodo(lista_filtrada, dato_copia);
 		}
+	}
+	if(p(lista_original->dato)){
+		dato_copia = c(lista_original->dato);
+		lista_filtrada = agregar_nodo(lista_filtrada, dato_copia);
 	}
 	return lista_filtrada;
 }

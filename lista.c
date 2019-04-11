@@ -37,9 +37,11 @@ int es_vacia(GList lista){
 void imprimir_lista(GList lista){
 	if (es_vacia(lista)) printf("Lista vacia\n");
 	else{
-		for(; !es_vacia(lista); lista = lista->sig){
+		GList referencia = lista;
+		for(;lista->sig != referencia; lista = lista->sig){
 			printf("%s, %d, %s\n", ((Persona)lista->dato)->Nombre, ((Persona)lista->dato)->Edad, ((Persona)lista->dato)->Pais);
 		}
+		printf("%s, %d, %s\n", ((Persona)lista->dato)->Nombre, ((Persona)lista->dato)->Edad, ((Persona)lista->dato)->Pais);
 	}
 }
 
@@ -59,7 +61,8 @@ Persona crear_persona(char* Nombre, int Edad, char* Pais){
 GList crear_nodo(void* dato){
 	GList nuevo_nodo = malloc(sizeof(GNodo));
 	nuevo_nodo->dato = dato;
-	nuevo_nodo->sig = NULL;
+	nuevo_nodo->ant = nuevo_nodo;
+	nuevo_nodo->sig = nuevo_nodo;
 	return nuevo_nodo;
 }
 
@@ -69,13 +72,15 @@ GList agregar_nodo(GList lista, void* dato){
 
 	if(es_vacia(lista)) return nuevo_nodo;
 
-	GList i = lista;
-	for(; !es_vacia(i->sig) ; i = i->sig);
-	i->sig = nuevo_nodo;
+	nuevo_nodo->sig = lista;
+	nuevo_nodo->ant = lista->ant;
+	lista->ant->sig = nuevo_nodo;
+	lista->ant = nuevo_nodo;
+	
 	return lista;
 }
 
-//Dados un nombre_archivo y una lista, le agrega a la lista
+//Dados un nombre_archagregar_nodoivo y una lista, le agrega a la lista
 //las lineas del archivo como datos de nodos
 GList generar_Glista_desde_archivo(char* nombre_archivo, GList lista){
 	FILE *archivo = fopen(nombre_archivo,"r");
@@ -103,24 +108,34 @@ void destriur_persona(void* dato){
 //Dada una lista y una funcion destruir, libera la memoria de la lista
 //aplicando destruir en todos los datos de sus nodos
 void gList_destruir (GList lista , Destruir d){
+	if(es_vacia(lista)) return;
+
 	GList i = lista, aux;
-	for(; !es_vacia(i) ; i = aux){
+
+	for(;i->sig != lista; i = aux){
 		d(i->dato);
 		aux = i->sig;
 		free(i);
 	}
+	d(i->dato);
+	free(i);
 }
 
 
 //Genera un archivo de nombre "nombre_archivo" a partir de la lista
 void GList_a_archivo(GList lista, char* nombre_archivo) {
 	FILE* archivo = fopen(nombre_archivo, "w");
+	GList referencia = lista;
 
-	for (; !es_vacia(lista); lista = lista->sig){
+	if(!es_vacia(lista)){
+		for (;lista->sig != referencia; lista = lista->sig){
+			fprintf(archivo, "%s, ", ((Persona)lista->dato)->Nombre);
+			fprintf(archivo, "%d, ", ((Persona)lista->dato)->Edad);
+			fprintf(archivo, "%s\n", ((Persona)lista->dato)->Pais); 
+		}
 		fprintf(archivo, "%s, ", ((Persona)lista->dato)->Nombre);
 		fprintf(archivo, "%d, ", ((Persona)lista->dato)->Edad);
-		fprintf(archivo, "%s", ((Persona)lista->dato)->Pais);
-		if( !es_vacia(lista->sig) ) fprintf(archivo, "\n"); 
+		fprintf(archivo, "%s", ((Persona)lista->dato)->Pais);		
 	}
 	fclose(archivo);
 }

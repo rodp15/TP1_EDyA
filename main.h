@@ -7,7 +7,8 @@
 
 typedef struct _GNodo {
 	void* dato;
-	struct _GNodo* sig ;
+	struct _GNodo* ant;
+	struct _GNodo* sig;
 } GNodo ;
 
 typedef GNodo* GList ;

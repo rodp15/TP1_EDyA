@@ -31,19 +31,17 @@ void* messi (void* dato){
 //Retorna una lista mapeada por la funcion f de la lista_original,
 //copiandola con la funcion c
 GList map(GList lista_original, Funcion f, Copia c){
-	GList lista_mapeada = crear_lista(), i;
+	if(es_vacia(lista_original)) return lista_original;
+
+	GList lista_mapeada = crear_lista(), referencia = lista_original;
 	void* dato_copia;
-
-	if(!es_vacia(lista_original)){
+	
+	for(;lista_original->sig != referencia; lista_original = lista_original->sig){
 		dato_copia = f(c(lista_original->dato));
-		lista_mapeada = crear_nodo(dato_copia);
-		lista_original = lista_original->sig;
-		i = lista_mapeada;
+		lista_mapeada = agregar_nodo(lista_mapeada, dato_copia);
 	}
-
-	for(; !es_vacia(lista_original); lista_original = lista_original->sig, i = i->sig){
-		dato_copia = f(c(lista_original->dato));
-		i->sig = crear_nodo(dato_copia);
-	}
+	dato_copia = f(c(lista_original->dato));
+	lista_mapeada = agregar_nodo(lista_mapeada, dato_copia);
+	
 	return lista_mapeada;
 }
