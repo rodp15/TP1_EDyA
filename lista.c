@@ -23,7 +23,7 @@ void* copiar_persona(void* dato){
 	return persona_copiada;
 }
 
-GList crear_lista(){
+GList crear_GList(){
 	return NULL;
 }
 
@@ -31,7 +31,7 @@ int es_vacia(GList lista){
 	return lista;
 }
 
-void imprimir_lista(GList lista){
+void imprimir_GList(GList lista){
 	if (es_vacia(lista)) printf("Lista vacia\n");
 
 	else{

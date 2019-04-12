@@ -68,13 +68,13 @@ Retorna la direccion de memoria donde se almacena la copia del dato pasado (Pers
 void* copiar_persona(void* dato);
 
 //Crea la lista vacia
-GList crear_lista();
+GList crear_GList();
 
 //Retorna un int determinando si la lista es vacia o no
 int es_vacia(GList lista);
 
 //Imprime en pantalla dato a dato la lista
-void imprimir_lista(GList lista);
+void imprimir_GList(GList lista);
 
 //Dados un Nombre, Edad y Pais, retorna una persona con esos datos
 Persona crear_persona(char* Nombre, int Edad, char* Pais);
