@@ -36,6 +36,7 @@ GList filter(GList lista_original, Predicado p, Copia c){
 }
 
 void aplica_filter(GList lista, char* salida, Predicado p, Copia c, Destruir d){
+	assert(p && c && d && "La funcion aplica_filter recibio NULL como parametro de la direccion de memoria de alguna de las funciones que requiere");
 	GList lista_filtrada = crear_GList();
 	lista_filtrada = filter(lista, p, c);
 	GList_a_archivo(lista_filtrada, salida);

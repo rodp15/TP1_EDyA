@@ -112,6 +112,7 @@ void destriur_persona(void* dato){
 }
 
 void gList_destruir (GList lista , Destruir d){
+	assert(d && "La funcion gList_destruir recibio NULL como parametro de la direccion de memoria de la funcion que requiere");
 	if(es_vacia(lista)) return;
 
 	GList i = lista, aux;

@@ -29,6 +29,7 @@ GList map(GList lista_original, Funcion f, Copia c){
 }
 
 void aplica_map(GList lista, char* salida, Funcion f, Copia c, Destruir d){
+	assert(f && c && d && "La funcion aplica_map recibio NULL como parametro de la direccion de memoria de alguna de las funciones que requiere");
 	GList lista_mapeada = crear_GList();
 	lista_mapeada = map(lista, f, c);
 	GList_a_archivo(lista_mapeada, salida);
