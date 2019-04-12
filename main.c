@@ -1,6 +1,6 @@
 #include "main.h"
 
-int main(){
+int main() {
 	srand(time(NULL));
 	//Nombres es una lista de todos los nombres del archivo de entrada de nombres.
 	//Paises es una lista de todos los paises del archivo de entrada de paises.

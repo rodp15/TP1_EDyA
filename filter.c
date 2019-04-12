@@ -1,41 +1,41 @@
 #include "main.h"
 
-int mayores50(void* dato){
+int mayores50(void* dato) {
 	assert(dato && "La funcion mayores50 recibio NULL como parametro");
 	return (((Persona)dato)->Edad > 50);
 }
 
-int menores50(void* dato){
+int menores50(void* dato) {
 	assert(dato && "La funcion menores50 recibio NULL como parametro");
 	return (((Persona)dato)->Edad <= 50);
 }
 
 
-int peruanos(void* dato){
+int peruanos(void* dato) {
 	assert(dato && "La funcion peruanos recibio NULL como parametro");
 	return (strcmp(((Persona)dato)->Pais, "Perú") == 0);
 }
 
-GList filter(GList lista_original, Predicado p, Copia c){
-	if(es_vacia(lista_original)) return lista_original;
+GList filter(GList lista_original, Predicado p, Copia c) {
+	if (es_vacia(lista_original)) return lista_original;
 
 	GList lista_filtrada = crear_GList(), referencia = lista_original;
 	void* dato_copia;
 
-	for(;lista_original->sig != referencia; lista_original = lista_original->sig){
-		if(p(lista_original->dato)){
+	for (; lista_original->sig != referencia; lista_original = lista_original->sig) {
+		if (p(lista_original->dato)) {
 			dato_copia = c(lista_original->dato);
 			lista_filtrada = agregar_nodo(lista_filtrada, dato_copia);
 		}
 	}
-	if(p(lista_original->dato)){
+	if (p(lista_original->dato)) {
 		dato_copia = c(lista_original->dato);
 		lista_filtrada = agregar_nodo(lista_filtrada, dato_copia);
 	}
 	return lista_filtrada;
 }
 
-void aplica_filter(GList lista, char* salida, Predicado p, Copia c, Destruir d){
+void aplica_filter(GList lista, char* salida, Predicado p, Copia c, Destruir d) {
 	assert(p && c && d && "La funcion aplica_filter recibio NULL como parametro de la direccion de memoria de alguna de las funciones que requiere");
 	GList lista_filtrada = crear_GList();
 	lista_filtrada = filter(lista, p, c);

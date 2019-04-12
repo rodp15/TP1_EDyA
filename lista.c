@@ -1,42 +1,42 @@
 #include "main.h"
 
-void* copiar_persona(void* dato){
+void* copiar_persona(void* dato) {
 	//Casteamos el dato a una Persona para manejarlo mas facil.
 	Persona persona = (Persona)dato;
 
 	//Si la persona es NULL, retornamos NULL.
-	if(!persona) return NULL;
+	if (!persona) return NULL;
 
 	//Reservamos memoria y copiamos la informacion de la persona original en persona_copiada.
 	Persona persona_copiada = malloc(sizeof(_Persona));
 	memcpy(persona_copiada, persona, sizeof(_Persona));
 
 	int largo_nombre = (strlen(persona->Nombre) + 1),
-		largo_pais =  (strlen(persona->Pais) + 1);
+		largo_pais = (strlen(persona->Pais) + 1);
 
 	//Reservamos memoria y copiamos la informacion del Nombre, Edad y Pais.
 	persona_copiada->Nombre = malloc(sizeof(char) * largo_nombre);
 	persona_copiada->Pais = malloc(sizeof(char) * largo_pais);
-	memcpy( persona_copiada->Nombre , persona->Nombre , largo_nombre);
-	memcpy( persona_copiada->Pais , persona->Pais , largo_pais);
+	memcpy(persona_copiada->Nombre, persona->Nombre, largo_nombre);
+	memcpy(persona_copiada->Pais, persona->Pais, largo_pais);
 
 	return persona_copiada;
 }
 
-GList crear_GList(){
+GList crear_GList() {
 	return NULL;
 }
 
-int es_vacia(GList lista){
+int es_vacia(GList lista) {
 	return lista == NULL;
 }
 
-void imprimir_GList(GList lista){
+void imprimir_GList(GList lista) {
 	if (es_vacia(lista)) printf("Lista vacia\n");
 
-	else{
+	else {
 		GList referencia = lista;
-		for(;lista->sig != referencia; lista = lista->sig){
+		for (; lista->sig != referencia; lista = lista->sig) {
 			printf("%s, %d, %s\n", ((Persona)lista->dato)->Nombre, ((Persona)lista->dato)->Edad, ((Persona)lista->dato)->Pais);
 		}
 		//Imprimimos el ultimo elemento de la lista.
@@ -44,7 +44,7 @@ void imprimir_GList(GList lista){
 	}
 }
 
-Persona crear_persona(char* Nombre, int Edad, char* Pais){
+Persona crear_persona(char* Nombre, int Edad, char* Pais) {
 	//Reservamos memoria para la nueva_persona y su informacion.
 	Persona nueva_persona = malloc(sizeof(_Persona));
 	nueva_persona->Nombre = malloc(sizeof(char) * (strlen(Nombre) + 1));
@@ -57,7 +57,7 @@ Persona crear_persona(char* Nombre, int Edad, char* Pais){
 	return nueva_persona;
 }
 
-GList crear_nodo(void* dato){
+GList crear_nodo(void* dato) {
 	GList nuevo_nodo = malloc(sizeof(GNodo));
 
 	nuevo_nodo->dato = dato;
@@ -67,11 +67,11 @@ GList crear_nodo(void* dato){
 	return nuevo_nodo;
 }
 
-GList agregar_nodo(GList lista, void* dato){
+GList agregar_nodo(GList lista, void* dato) {
 	//Creamos el nuevo_nodo que agregaremos al final de la lista.
 	GList nuevo_nodo = crear_nodo(dato);
 
-	if(es_vacia(lista)) return nuevo_nodo;
+	if (es_vacia(lista)) return nuevo_nodo;
 
 	//Reasingamos los punteros de la lista y del nuevo_nodo
 	//para que quede el nuevo_nodo como el ultimo de la lista.
@@ -83,10 +83,10 @@ GList agregar_nodo(GList lista, void* dato){
 	return lista;
 }
 
-GList generar_Glista_desde_archivo(char* nombre_archivo, GList lista){
+GList generar_Glista_desde_archivo(char* nombre_archivo, GList lista) {
 	FILE *archivo = fopen(nombre_archivo, "r");
 
-	if(!archivo) return lista;
+	if (!archivo) return lista;
 
 	char buff_nom[100], buff_pais[100];
 	int buff_edad;
@@ -94,7 +94,7 @@ GList generar_Glista_desde_archivo(char* nombre_archivo, GList lista){
 	//Recorremos el archivo leyendo las lineas hasta el EOF.
 	//Parseamos las lineas para guardar solo la informacion necesaria
 	//y luego agregamos un nodo a la lista con la informacion leida.
-	while(EOF != fscanf(archivo, " %[^,], %d, %[^\r\n]\r\n", buff_nom, &buff_edad, buff_pais)){
+	while (EOF != fscanf(archivo, " %[^,], %d, %[^\r\n]\r\n", buff_nom, &buff_edad, buff_pais)) {
 		lista = agregar_nodo(lista, crear_persona(buff_nom, buff_edad, buff_pais));
 	}
 
@@ -103,7 +103,7 @@ GList generar_Glista_desde_archivo(char* nombre_archivo, GList lista){
 	return lista;
 }
 
-void destriur_persona(void* dato){
+void destriur_persona(void* dato) {
 	assert(dato && "destriur_persona recibio NULL como parametro");
 	Persona persona = (Persona)dato;
 	free(persona->Nombre);
@@ -111,13 +111,13 @@ void destriur_persona(void* dato){
 	free(persona);
 }
 
-void gList_destruir (GList lista , Destruir d){
+void gList_destruir(GList lista, Destruir d) {
 	assert(d && "La funcion gList_destruir recibio NULL como parametro de la direccion de memoria de la funcion que requiere");
-	if(es_vacia(lista)) return;
+	if (es_vacia(lista)) return;
 
 	GList i = lista, aux;
 
-	for(; i->sig != lista; i = aux){
+	for (; i->sig != lista; i = aux) {
 		d(i->dato);
 		aux = i->sig;
 		free(i);
@@ -130,8 +130,8 @@ void GList_a_archivo(GList lista, char* nombre_archivo) {
 	FILE* archivo = fopen(nombre_archivo, "w");
 	GList referencia = lista;
 
-	if(!es_vacia(lista)){
-		for (;lista->sig != referencia; lista = lista->sig){
+	if (!es_vacia(lista)) {
+		for (; lista->sig != referencia; lista = lista->sig) {
 			fprintf(archivo, "%s, ", ((Persona)lista->dato)->Nombre);
 			fprintf(archivo, "%d, ", ((Persona)lista->dato)->Edad);
 			fprintf(archivo, "%s\n", ((Persona)lista->dato)->Pais);
