@@ -1,15 +1,18 @@
 #include "main.h"
 
 int mayores50(void* dato){
+	assert(dato && "La funcion mayores50 recibio NULL como parametro")
 	return (((Persona)dato)->Edad > 50);
 }
 
 int menores50(void* dato){
+	assert(dato && "La funcion menores50 recibio NULL como parametro")
 	return (((Persona)dato)->Edad <= 50);
 }
 
 
 int peruanos(void* dato){
+	assert(dato && "La funcion peruanos recibio NULL como parametro")
 	return (strcmp(((Persona)dato)->Pais, "Perú") == 0);
 }
 

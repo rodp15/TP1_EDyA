@@ -1,11 +1,13 @@
 #include "main.h"
 
 void* aumentar_anio(void* dato){
+	assert(dato && "La funcion aumentar_anio recibio NULL como parametro")
 	((Persona)dato)->Edad++;
 	return dato;
 }
 
 void* messi (void* dato){
+	assert(dato && "La funcion messi recibio NULL como parametro")
 	strcpy(((Persona)dato)->Nombre, "Messi");
 	return dato;
 }

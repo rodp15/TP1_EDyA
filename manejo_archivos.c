@@ -6,23 +6,27 @@ void alojar_lista(char*** lista, int size){
 
 int carga_archivos(char* nombre_archivo, char*** Lineas, int size){
 	FILE* archivo = fopen(nombre_archivo, "r");
-	int cant_lineas = 0, largo;
-	char aux[100];
-
-	//Corroboramos la existencia del archivo
+  //Corroboramos la existencia del archivo.
   assert("No existe el archivo ingresado de lectura" && archivo);
 
+  int cant_lineas = 0, largo;
+  char aux[100];
+
+  //Recorremos el archivo hasta el EOF guardando en aux las lineas parseadas.
 	while(EOF != fscanf(archivo, "%[^\r\n]\r\n", aux)){
 
     largo = strlen(aux);
+    //Guardamos el lugar para la palabra.
     (*Lineas)[cant_lineas] = malloc(sizeof(char) * (largo + 1));
     aux[largo] = '\0';
 
+    //Guardamos la informacion de aux en nuestra lista.
     strcpy((*Lineas)[cant_lineas], aux);
+
 		cant_lineas++;
 
     //Si la cantidad de lineas coincide con el tamanio de la lista,
-    //realocamos la lista con el doble de espacio
+    //realocamos la lista con el doble de espacio.
     if (cant_lineas == size){
       size *= 2;
       (*Lineas) = realloc((*Lineas), sizeof(char*) * size);
@@ -47,7 +51,7 @@ void generacion_archivo_personas(char* nombre_salida, char** paises, char** nomb
 		strcpy(buff_pais, paises[r]);
 		r = (rand() % 100) + 1;
 		fprintf(archivo, "%s, %d, %s", buff_nombre, r, buff_pais);
-		if(i != (cantidad_lineas-1)) fprintf(archivo, "\n");
+		fprintf(archivo, "\n");
 	}
 
 	fclose(archivo);
