@@ -28,7 +28,7 @@ GList crear_lista(){
 }
 
 int es_vacia(GList lista){
-	return lista == NULL;
+	return lista;
 }
 
 void imprimir_lista(GList lista){
@@ -84,7 +84,7 @@ GList agregar_nodo(GList lista, void* dato){
 }
 
 GList generar_Glista_desde_archivo(char* nombre_archivo, GList lista){
-	FILE *archivo = fopen(nombre_archivo,"r");
+	FILE *archivo = fopen(nombre_archivo, "r");
 
 	if(!archivo) return lista;
 
@@ -104,6 +104,7 @@ GList generar_Glista_desde_archivo(char* nombre_archivo, GList lista){
 }
 
 void destriur_persona(void* dato){
+	assert(dato && "destriur_persona recibio NULL como parametro");
 	Persona persona = (Persona)dato;
 	free(persona->Nombre);
 	free(persona->Pais);
