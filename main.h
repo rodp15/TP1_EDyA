@@ -5,28 +5,58 @@
 #include <ctype.h>
 #include <time.h>
 
+/*
+GNodo es una estructura que almacena 3 variables,
+un void* dato que nos permite guardar informacion y
+2 punteros a GNodo, ant y sig, que nos permiten referenciar al nodo anterior y siguiente respectivamente.
+*/
 typedef struct _GNodo {
 	void* dato;
 	struct _GNodo* ant;
 	struct _GNodo* sig;
 } GNodo ;
 
+//Definimos a GList como un puntero a GNodo.
 typedef GNodo* GList ;
 
+/*
+Definimos la estructura _Persona como los 3 datos que representaran a nuestras personas,
+un char* Nombre, int Edad y char* Pais que almacenan la informacion indicada por sus nombres.
+*/
 typedef struct{
 	char* Nombre;
 	int Edad;
 	char* Pais;
 }_Persona;
 
+/*
+Definimos a Persona como el puntero a _Persona
+para asi poder implementarla como un void* dato de un GNodo.
+*/
 typedef _Persona* Persona;
 
+/*
+Definimos Predicado como el puntero a una funcion que retorna toma un void* dato
+y retorna un int representando si se cumple o no la condicion de la funcion.
+*/
 typedef int (*Predicado) (void* dato);
 
+/*
+Definimos Funcion como el puntero a una funcion que toma un void* dato
+y retorna un void* representando el resultado de aplicar dicha funcion al dato recibido.
+*/
 typedef void* (*Funcion) (void* dato);
 
+/*
+Definimos Copia como el puntero a una funcion que recibe un void* dato
+y retorna un void* que representa una copia fisica de memoria que contiene el dato recibido.
+*/
 typedef void* (*Copia) (void* dato);
 
+/*
+Definimos Destruir como el puntero a una funcion que recibe un void* dato
+y elimina toda la informacion que almacena.
+*/
 typedef void (*Destruir) (void* dato);
 
 
