@@ -1,13 +1,13 @@
 #include "main.h"
 
 void* aumentar_anio(void* dato){
-	assert(dato && "La funcion aumentar_anio recibio NULL como parametro")
+	assert(dato && "La funcion aumentar_anio recibio NULL como parametro");
 	((Persona)dato)->Edad++;
 	return dato;
 }
 
 void* messi (void* dato){
-	assert(dato && "La funcion messi recibio NULL como parametro")
+	assert(dato && "La funcion messi recibio NULL como parametro");
 	strcpy(((Persona)dato)->Nombre, "Messi");
 	return dato;
 }
@@ -15,7 +15,7 @@ void* messi (void* dato){
 GList map(GList lista_original, Funcion f, Copia c){
 	if(es_vacia(lista_original)) return lista_original;
 
-	GList lista_mapeada = crear_lista(), referencia = lista_original;
+	GList lista_mapeada = crear_GList(), referencia = lista_original;
 	void* dato_copia;
 
 	for(;lista_original->sig != referencia; lista_original = lista_original->sig){
@@ -29,7 +29,7 @@ GList map(GList lista_original, Funcion f, Copia c){
 }
 
 void aplica_map(GList lista, char* salida, Funcion f, Copia c, Destruir d){
-	GList lista_mapeada = crear_lista();
+	GList lista_mapeada = crear_GList();
 	lista_mapeada = map(lista, f, c);
 	GList_a_archivo(lista_mapeada, salida);
 	gList_destruir(lista_mapeada, d);

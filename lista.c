@@ -28,7 +28,7 @@ GList crear_GList(){
 }
 
 int es_vacia(GList lista){
-	return lista;
+	return lista == NULL;
 }
 
 void imprimir_GList(GList lista){
@@ -137,7 +137,7 @@ void GList_a_archivo(GList lista, char* nombre_archivo) {
 		}
 		fprintf(archivo, "%s, ", ((Persona)lista->dato)->Nombre);
 		fprintf(archivo, "%d, ", ((Persona)lista->dato)->Edad);
-		fprintf(archivo, "%s", ((Persona)lista->dato)->Pais);
+		fprintf(archivo, "%s\n", ((Persona)lista->dato)->Pais);
 	}
 	fclose(archivo);
 }
