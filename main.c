@@ -22,7 +22,7 @@ int main() {
 
 	generacion_archivo_personas("salida.txt", Paises, Nombres, cant_nombres, cant_paises, 10000);
 
-	liberar_lista(Nombres, cant_paises);
+	liberar_lista(Nombres, cant_nombres);
 	liberar_lista(Paises, cant_paises);
 
 	GList lista_personas = crear_GList();
